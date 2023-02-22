@@ -122,7 +122,6 @@ header{
     max-width: 1000px;
     margin-top:10px;
     font-family: 'League Spartan';
-    
 }
 .back{
     display: flex;
@@ -166,7 +165,11 @@ header{
     width: 255px;
     height: 378px;
     box-shadow: 0px 1px 5px black;
+    transition: all 500ms ease;
   
+}
+.cardre:hover{
+  transform: translateY(15px);
 }
 .cardre img{
   width: 100%;
@@ -303,11 +306,12 @@ footer{
   font-family: 'League Spartan';
   font-weight: bold;
   font-size: 30px;
- 
 }
 
 
-
+.fa-brands{
+  color: white;
+}
 /**************  Media Queries  **************************/
 
 

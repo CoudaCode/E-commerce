@@ -7,9 +7,7 @@
   /* font-family: 'Roboto', sans-serif; */
 }
 
-body{
-  
-}
+
 .navbar li ,.dropdown-menu li{
   list-style: none;
 }
@@ -130,8 +128,6 @@ header{
   justify-content: center;
 
 } 
-
-
 /* ******************** CONTACT************************** */
 
 .info

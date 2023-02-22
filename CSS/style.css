@@ -242,7 +242,7 @@ animation-play-state: paused;
       transition: all 500ms ease;
     }
     .makeup:hover{
-      transform: translateY(3px);
+      transform: translateY(13px);
     }
     .makeup .makeupImg{
     width: 98px;
@@ -335,7 +335,7 @@ animation-play-state: paused;
 
 }
 .livraisonGratos:hover{
-  transform: translateY(5px);
+  transform: translateY(15px);
 }
 .livraisonGratos img{
 width: 100%;

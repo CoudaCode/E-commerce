@@ -24,11 +24,11 @@
                   <li><a href="../index.html">Acceuil</a></li>
                   <li><a
                      href="../HTML/Produits.html">Produits</a></li>
-                  <li><a href="../HTML/About.html">A propos</a></li>
+               
                   <li><a href="../HTML/contact.html">Contact</a></li>
                 </ul>
                 <div class="login">
-                  <a href="" class="cart"><i class="fa-solid fa-cart-shopping"></i></a>
+                  <a href="../HTML/panier.html" class="cart"><i class="fa-solid fa-cart-shopping"></i></a>
                     <a class="action-btn" href="../HTML/inscription.html">INSCRIPTION</a>
                     <a class="action-btn" href="../HTML/inscription.html">CONNEXION</a>
                 </div>
@@ -39,9 +39,9 @@
             </div>
     
             <div class="dropdown-menu open">
-              <li><a href="/index.html">Acceuil</a></li>
-              <li><a href="../HTML/Produits.html">Produits</a></li>
-              <li><a href="../HTML/About.html">A propos</a></li>
+              <li><a href="../index.html">Acceuil</a></li>
+              <li><a href="../HTML/produit.html">Produits</a></li>
+             
               <li><a href="../HTML/contact.html">Contact</a></li>
               <li> <a class="action-btn" href="../HTML/inscription.html">CONNEXION</a></li>
               <li> <a class="action-btn" href="../HTML/inscription.html">INSCRIPTION</a></li>
@@ -69,14 +69,14 @@
                     </div>
                     <div class="paie">
                         
-                          <button class="ajout"><a href="#">Ajouter dans le panier</a></button>
+                          <button class="ajout"><a href="../HTML/produit.html">Ajouter dans le panier</a></button>
                        
 
                           <button class="payer"><a href="../HTML/panier.html">Payer Maintenant</a></button>
                         
                         
                     </div>
-                    <button class="monAchat"><a href="">Continuer mon achat</a></button>
+                    <button class="monAchat"><a href="../HTML/produit.html">Continuer mon achat</a></button>
                     <p class="livrai">
                       <i class="fa-solid fa-truck"></i> Livraison Gratuite
                     </p>
@@ -107,11 +107,13 @@
                   <div class="cardre"> 
                       <img src="../image/givenchy.jpeg" alt="">
                       <div class="name">
-                          <p>Produits1</p>
-                          <p><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></p>
+                          <p>Givenchy Rose à levre</p>
+                          <p><a href="../HTML/produit.html"><i class="fa-solid fa-cart-shopping"></i></a></p>
                       </div>
                       <div class="name">
-                        <p class="valeur">14 000</p>
+                        <p class="valeur">
+                          <span id="prix">5 000  </span>
+                        </p>
                         <p>
                             <i class="fa-solid fa-star demo"></i>
                             <i class="fa-solid fa-star demo"></i>
@@ -122,13 +124,15 @@
                     </div>
                   </div>
                   <div class="cardre"> 
-                    <img src="../image/givenchy.jpeg" alt="">
+                    <img src="../image/Parfums/channel.jpeg" alt="">
                     <div class="name">
-                        <p>Produits1</p>
-                        <p><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></p>
+                        <p>Channel Parfum</p>
+                        <p><a href="../HTML/produit.html"><i class="fa-solid fa-cart-shopping"></i></a></p>
                     </div>
                     <div class="name">
-                      <p class="valeur">14 000</p>
+                      <p class="valeur">
+                        <span id="prix">10 000  </span>
+                      </p>
                       <p>
                           <i class="fa-solid fa-star demo"></i>
                           <i class="fa-solid fa-star demo"></i>
@@ -139,13 +143,15 @@
                   </div>
                   </div>
                   <div class="cardre"> 
-                    <img src="../image/givenchy.jpeg" alt="">
+                    <img src="../image/Bain-et-Corps/bain3.jpeg" alt="">
                     <div class="name">
-                        <p>Produits1</p>
-                        <p><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></p>
+                        <p>Soins de cheveux</p>
+                        <p><a href="../HTML/produit.html"><i class="fa-solid fa-cart-shopping"></i></a></p>
                     </div>
                     <div class="name">
-                      <p class="valeur">14 000</p>
+                      <p class="valeur">
+                        <span id="prix">7 000  </span>
+                      </p>
                       <p>
                           <i class="fa-solid fa-star demo"></i>
                           <i class="fa-solid fa-star demo"></i>
@@ -156,13 +162,15 @@
                   </div>
                   </div>
                   <div class="cardre"> 
-                    <img src="../image/givenchy.jpeg" alt="">
+                    <img src="../image/Soins-de-peau/Peau4.jpeg" alt="">
                     <div class="name">
-                        <p>Produits1</p>
-                        <p><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></p>
+                        <p>Value Size (prouit pour bain)</p>
+                        <p><a href="../HTML/produit.html"><i class="fa-solid fa-cart-shopping"></i></a></p>
                     </div>
                     <div class="name">
-                      <p class="valeur">14 000</p>
+                      <p class="valeur">
+                        <span id="prix">14 000  </span>
+                      </p>
                       <p>
                           <i class="fa-solid fa-star demo"></i>
                           <i class="fa-solid fa-star demo"></i>
@@ -270,7 +278,7 @@
         var toggleBtn = document.querySelector('.toggle-btn')
         var toggleBtnicon = document.querySelector('.toggle-btn i')
         var dropdownMenu = document.querySelector('.dropdown-menu')
-        console.log(toggleBtn, toggleBtnicon, dropdownMenu)
+        // console.log(toggleBtn, toggleBtnicon, dropdownMenu)
     
         toggleBtn.onclick = function(){
           console.log(dropdownMenu.classList.toggle('open'))
