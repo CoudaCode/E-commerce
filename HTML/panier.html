@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Panier</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/produit.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong|Roboto|Montserrat|League+Spartan|Pacifico|">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="/index.html">DmC</a>
+            </div>
+            <ul class="links">
+              <li><a href="/index.html">Acceuil</a></li>
+              <li><a
+                 href="/HTML/Produits.html">Produits</a></li>
+              <li><a href="/HTML/About.html">A propos</a></li>
+              <li><a href="/HTML/contact.html">Contact</a></li>
+            </ul>
+            <div class="login">
+              <a href="" class="cart"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a class="action-btn" href="/HTML/inscription.html">INSCRIPTION</a>
+                <a class="action-btn" href="/HTML/inscription.html">CONNEXION</a>
+            </div>
+            <div class="toggle-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+              
+        </div>
+
+        <div class="dropdown-menu open">
+          <li><a href="/index.html">Acceuil</a></li>
+          <li><a href="/HTML/Produits.html">Produits</a></li>
+          <li><a href="/HTML/About.html">A propos</a></li>
+          <li><a href="/HTML/contact.html">Contact</a></li>
+          <li> <a class="action-btn" href="/HTML/inscription.html">CONNEXION</a></li>
+          <li> <a class="action-btn" href="/HTML/inscription.html">INSCRIPTION</a></li>
+        </div>
+
+            <!-- <section class="hero">
+                <h1>Contact</h1>
+                <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, dolorum?
+                </p>
+            </section> -->
+  </header> 
+
+
+    <div class="container">
+            <div class="achat">
+                <div class="titre">
+                    <p>
+                        <span id="votre" >Votre Panier</span> <br>
+                        Vous n'etes pas prêt à passer à la caisse ? <br> Continuer votre Achat
+                    </p>
+                    <button class="btn-ctn">
+                        <a href="/HTML/produits.html">Continuer Votre Achat</a>
+                    </button>
+                </div>                                                                                                                                                                      
+                <div class="produits">
+                    <div class="VotrePanier">
+                            <div class="img-prd">
+                                <img src="../image/bain-et-corps.jpeg" width="100%" height="100%" alt="">
+                            </div>
+                            <div class="prd">
+                                <div class="text">
+                                    <h4 id="NomProduits">Chanel Parfum</h4><br>
+                                    <span class="quantite">
+                                        quantite <span id="qte">1</span>
+                                    </span><br>
+                                    <span id="mtn">10 000</span>
+                                </div>
+                                <div class="retirer">
+                                    <a href="#" id="retirer">Retirer</a>
+                                </div>
+                            </div>mtn
+                    </div>
+                    <div class="VotrePanier">
+                        <div class="img-prd">
+                            <img src="../image/bain-et-corps.jpeg" width="100%" height="100%" alt="">
+                        </div>
+                        <div class="prd">
+                            <div class="text">
+                                <h4>Chanel Parfum</h4> <br>
+                                <span class="quantite">
+                                    quantite <span id="qte">1</span>
+                                </span><br>
+                                <span class="mtn">10 000</span>
+                            </div>
+                            <div class="retirer">
+                                <a href="#">Retirer</a>
+                            </div>
+                        </div>
+                </div>
+                    
+                </div>
+            </div>
+
+            <div class="total">
+                <hr class="trait">
+                <div class="mtntotal">
+                    <p>Total</p>
+                    <p><span class="somme">20 000</span>fcfa</p>
+                </div>
+            </div>
+    </div>
+
+    
+    <div class="commande">
+        <button>
+            <a href="https://wa.me./047185291">Valider la commande</a>
+        </button>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script>
+    var toggleBtn = document.querySelector('.toggle-btn')
+    var toggleBtnicon = document.querySelector('.toggle-btn i')
+    var dropdownMenu = document.querySelector('.dropdown-menu')
+    console.log(toggleBtn, toggleBtnicon, dropdownMenu)
+
+    toggleBtn.onclick = function(){
+      console.log(dropdownMenu.classList.toggle('open'))
+      const isOpen = dropdownMenu.classList.contains('open')
+
+      toggleBtnicon.classList = isOpen 
+
+      ? "fa-solid fa-xmark"
+      : "fa-solid fa-bars"
+    }
+
+  </script>
+  <script src="../js/panier.js"></script>
+</body>
+</html>

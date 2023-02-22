@@ -1,0 +1,526 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #EEDDCC;
+}
+.navbar{
+  width: 100%;
+  height: 64px;
+  position: fixed;
+  z-index: 1000;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+  background-color: #EEDDCC;
+}
+.navbar .logo a{
+font-weight: bold;
+font-size: 1.5rem;
+font-family: 'Pacifico';
+}
+.navbar .links {
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar .toggle-btn{
+color: #fff;
+font-size: 1.5rem;
+cursor: pointer;
+display: none;
+}
+.navbar li ,.dropdown-menu li{
+list-style: none;
+}
+.navbar a ,.dropdown-menu a{
+text-decoration: none;
+color: black;
+font-size: 1rem;
+}
+
+.navabr a:hover ,.dropdown-menu a:hover{
+color: black;
+}
+.action-btn{
+    /* background-color: orange; */
+    padding: 0.5rem 0.4rem;
+    border: 1px solid white;
+    outline: none;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-right: 10px;
+}
+
+.action-btn:hover{
+    scale: 1.05;
+    background-color: white;
+    color: black;
+}
+
+.action-btn:active{
+  scale: 0.5;
+
+}
+.dropdown-menu{
+display: none;
+position: absolute;
+right: 2rem;
+top: 60px;
+width: 300px;
+height: 0;
+background-color: #5d514c;
+backdrop-filter: blur(15px);
+overflow: hidden;
+border-radius: 10px;
+transition: height 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.dropdown-menu.open{
+height: 280px;
+}
+.dropdown-menu li{
+padding: 0.7rem;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.dropdown-menu .action-btn{
+width: 100%;
+border-radius: 20px;
+display: flex;
+display: flex;
+align-items: center;
+justify-content: center;
+
+} 
+
+
+.hero{
+  height: calc(100vh - 64px);
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+  
+}
+.promo{
+  width: 585px;
+  height: 367.79px;
+ 
+  text-align: center;
+}
+
+.promo h1:nth-child(1){
+  font-size: 78px;
+  font-family: "Frank Ruhl Libre";
+}
+.promo h1:nth-child(2){
+  font-size: 78px;
+  font-family: "Lato";
+}
+.promo p{
+  font-family: "Lato";
+  font-size: 24px;
+  text-align: center;
+  text-transform: capitalize;
+  margin: 0 auto;
+  width: 70%;
+  margin-top: 20px;
+}
+
+.achater{
+  width: 223px;
+  height: 59.59px;
+  background-color: #34251F;
+  color: white;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0px 15px 10px -5px #777;
+  margin-top: 30px;
+}
+
+.d1{
+  width: 463px;
+  height: 510px;
+  background-size: contain;
+  background-position: center;
+  box-shadow: 0px 15px 10px -5px #777;
+  border-bottom-left-radius: 30%;
+  animation: couda 50s linear 2s infinite alternate;
+}
+
+/* .d1{
+width: 576px;
+height: 432px;
+margin: 50px auto;
+
+background-color: #EDEDED;
+
+animation: fondu 15s ease-in-out infinite both;
+} */
+.conteneur{
+max-width: 463px;
+}
+.d2{
+width: 100%;
+height: 0px;
+padding-top: 75%;
+box-shadow: 0px 0px 10px #777;
+background-color: #EDEDED;
+background-size: cover;
+animation: couda 30s cover ease-in-out infinite both;
+}
+.d1:hover, .d2:hover{
+animation-play-state: paused;
+}
+
+
+
+  /* animation: ; */
+  @keyframes couda{
+    0%{background-image: url("../image/Bain-et-Corps/bain2.webp");
+      background-repeat: no-repeat;
+      }
+    33.33%{background-image: url("../image/Bain-et-Corps/bain3.jpeg");background-repeat: no-repeat;}
+    66.67%{background-image: url("../image/Bain-et-Corps/bain1.jpeg");background-repeat: no-repeat;}
+    100%{background-image: url("../image/Bain-et-Corps/bain5.jpeg");background-repeat: no-repeat;}
+    }
+
+
+
+/* Categorie */
+
+    .cadre{
+      width: 100%;
+      height: auto;
+      margin-top: 10%;
+    }
+    .cadre h1{
+      font-size: 68px;
+      margin-bottom: 2%;
+      text-align: center;
+      font-family: "Frank Ruhl Libre";
+    }
+    .collection
+    {
+      width: 66%;
+      display: flex;
+      gap: 28px;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      
+    }
+    .collection a{
+      text-decoration: none;
+      color: black;
+    }
+    .makeup{
+      width: 378px;
+      height: 156px;
+      border: 1px solid black;
+      box-shadow: 0px 15px 10px -5px #777;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      gap: 10px;
+      margin: 0 auto;
+      transition: all 500ms ease;
+    }
+    .makeup:hover{
+      transform: translateY(3px);
+    }
+    .makeup .makeupImg{
+    width: 98px;
+    height: 109px;  
+    border-radius: 100%;
+    background-color: red;
+    
+    }
+    .makeup .makeupImg img{
+      border-radius: 100%;
+    }
+    .makeup h3{
+      width: 200px;
+      /* height: 35px; */
+      font-family: 'Jost';
+      font-size: 24px;
+    }
+
+
+/* Produits Avec livraison gratuite */
+    .relatifs{
+      width: 100%;
+      height: 743px;
+      max-width: 100%;
+      margin-top:5%;
+      background-color: #34251F;
+      
+      }
+
+.info{
+  width: 27%;
+  height: 538px;
+  color: white;
+  text-align: start;
+
+} 
+.info p{
+  margin-bottom: 10%;
+}
+.info .crasse{
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 39px;
+  line-height: 56px;
+  margin-bottom: 12%;
+  margin-top: 6%;
+}
+.info .crass, .info .neMaqr{
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 180%;
+}
+/* .info a{
+
+
+} */
+.voirPlus{
+  color: white;
+  border: 1px solid white;
+  background-color: #ededed12;
+  width: 167px;
+  height: 64px;
+  transition: all 100ms ease-in ;
+}
+.voirPlus:hover{
+  background-color: #fff;
+  color: black;
+}
+
+.gratos{
+  width: auto;
+  display: flex;
+  gap: 40px;
+  height: 100%;
+  justify-content: center;
+  align-items: center
+
+}
+
+.livraisonGratos{
+  width: 313.34px;
+  height: 538px;
+  box-shadow: 0px 1px 5px black;
+  background-color: white;
+  border-radius: 10px;
+  transition: all 500ms ease;
+
+}
+.livraisonGratos:hover{
+  transform: translateY(5px);
+}
+.livraisonGratos img{
+width: 100%;
+height: 70%;
+}
+.name{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 20px;
+  background-color: white;
+}
+.name i{
+  color: black;
+}
+.name p{
+margin-top: 15px;
+padding: 0 10px;
+font-weight: bold;
+font-family: 'Lato';
+}
+
+
+.longVoirPLUS{
+  border: none;
+  width: 55%;
+  height: 48px;
+  font-weight: bold;
+  margin: 0% auto;
+  margin-top: 6%;
+}
+.longVoirPLUS button{
+  border: none;
+  width: 100%;
+  cursor: pointer;
+  height: 100%;
+  color: white;
+  background-color: #34251F;
+}
+/* ****************************  footer ************************* */
+
+footer{
+  width: 100%;
+  height: auto;
+  background-color: azure;
+  margin-top: 10%;
+}
+
+.primaire{
+  width: 100%;
+  height: 40px;
+  background-color: #34251F;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.primaire h5{
+  color: white;
+  font-family: 'League Spartan';
+}
+
+.login input{
+
+  width: 600px;
+  border:none;
+  height: 30px;
+  padding: 10px;
+  background-color: #5d514c;
+  
+} 
+
+.login input::placeholder{
+ 
+  font-family: 'League Spartan';
+  
+  font-weight: 500;
+  font-size: 13px;
+  opacity: 0.6;
+  color: white;
+ 
+} 
+.login button{
+  width: 122px;
+  height: 30px;
+  color: white;
+  border: 1px solid white;
+  background-color: #ffffff00;
+  cursor: pointer;
+}
+.seconde{
+  
+  display: flex;
+  justify-content: space-evenly;
+  background-color:  #F2F2F2;
+}
+.seconde div{
+
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.logo i{
+  color: white;
+}
+.log h1{
+    font-family: 'Pacifico';
+
+}
+
+.categories p{
+  line-height: 28px;
+  font-family: 'League Spartan';
+}
+.information a{
+  display: block;
+  text-decoration: none;
+  color: black;
+  line-height: 28px;
+  font-family: 'League Spartan';
+}
+
+.contact{
+  margin-top: 50px;
+}
+#Contact .cont1{
+  display: flex;
+  margin-top: 12px;
+}
+#Contact p{
+  font-family: 'League Spartan';
+}
+#Contact i{
+  margin-right: 10px;
+}
+#mail{
+  
+  text-decoration: none;
+  color: black;
+} 
+.text{
+  font-family: 'League Spartan';
+  font-weight: bold;
+  font-size: 30px;
+ 
+}
+
+
+
+
+/**************  Media Queries  **************************/
+
+
+@media(max-width:992px){
+  .navbar .links, .navbar .action-btn{
+    display: none;
+  }
+  .navbar .toggle-btn{
+    display: block;
+  }
+  .dropdown-menu{
+    display: block;
+  }
+
+  .login input,  .login button{
+    width: auto;
+  }
+  .seconde{
+    flex-direction: column;
+  }
+  .container{
+      flex-direction: column;
+  }
+  .contenu {
+    width: auto;
+    height: auto;
+}
+
+}
+@media(max-width:576px){
+  .dropdown-menu{
+    left: 2rem;
+    width: unset;
+  }
+  
+  .contenu {
+    width: auto;
+    height: auto;
+}
+}

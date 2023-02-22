@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100&family=Montserrat:wght@100&family=Roboto:wght@100&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;   
+  /* font-family: 'Roboto', sans-serif; */
+}
+
+body{
+  
+}
+.navbar li ,.dropdown-menu li{
+  list-style: none;
+}
+.navbar a ,.dropdown-menu a{
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
+
+.navabr a:hover ,.dropdown-menu a:hover{
+  color: black;
+}
+
+
+/******************  HEADER   *************************/
+
+header{
+    position: relative;
+    /* padding: 0 2rem; */
+   
+    height: 100vh;
+    background-color: black;
+    background-size: cover;
+    background-position:center ;
+    background-image: url('https://images.unsplash.com/photo-1485470733090-0aae1788d5af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1517&q=80');
+}
+
+.hero{
+  height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+.cart{
+  font-size: 0.8rem;
+  color: white;
+  margin-right: 10px;
+}
+.navbar{
+  width: 100%;
+  height: 64px;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+  background-color: #34251F;
+}
+.navbar .logo a{
+  font-weight: bold;
+  font-size: 1.5rem;
+  font-family: 'Pacifico';
+}
+ .navbar .links {
+    display: flex;
+    gap: 2rem;
+ }
+
+ .navbar .toggle-btn{
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+ .action-btn{
+      /* background-color: orange; */
+      padding: 0.5rem 0.4rem;
+      border: 1px solid white;
+      outline: none;
+      font-size: 0.8rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: scale 0.2s ease;
+      margin-right: 10px;
+}
+
+.action-btn:hover{
+      scale: 1.05;
+      background-color: white;
+      color: black;
+}
+
+.action-btn:active{
+    scale: 0.5;
+
+}
+.dropdown-menu{
+  display: none;
+  position: absolute;
+  right: 2rem;
+  top: 60px;
+  width: 300px;
+  height: 0;
+  background-color: rgba(225, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  overflow: hidden;
+  border-radius: 10px;
+  transition: height 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.dropdown-menu.open{
+  height: 280px;
+}
+.dropdown-menu li{
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dropdown-menu .action-btn{
+  width: 100%;
+  border-radius: 20px;
+  display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+} 
+
+
+/* ******************** CONTACT************************** */
+
+.info
+{
+  width: 12%;
+  margin: 0 auto;
+  font-family: 'League Spartan';
+
+  margin-bottom: 4%;
+}
+.logo{
+  color: white;
+}
+.info div
+{
+  margin-top: 24px;
+  display: flex;
+
+}
+.info i{
+  margin-right: 10px;
+}
+
+
+.carte{
+  width: 600px;
+  height: 450px;
+  margin: 0 auto;
+}
+
+#subject
+{
+  width: 430px;
+  margin: 0 auto;
+  margin-top: 4%;
+}
+#subject input{
+  width: 100%;
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+#subject button{
+  width: 100%;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+   background-color: #34251F;
+   color: white;
+}
+#subject input::placeholder{
+    padding: 10px;
+    font-family: Roboto;
+}
+
+/*$$$$$$$$$$$$$$$$$$$$   FOOTER $$$$$$$$$$$$$$$$$$$$ */
+ footer{
+  width: 100%;
+  height: auto;
+  background-color: azure;
+  margin-top: 10%;
+}
+
+.primaire{
+  width: 100%;
+  height: 40px;
+  background-color: #34251F;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.primaire h5{
+  color: white;
+  font-family: 'League Spartan';
+}
+
+.login input{
+
+  width: 600px;
+  border:none;
+  height: 30px;
+  padding: 10px;
+  background-color: #5d514c;
+  
+} 
+
+.login input::placeholder{
+ 
+  font-family: 'League Spartan';
+  
+  font-weight: 500;
+  font-size: 13px;
+  opacity: 0.6;
+  color: white;
+ 
+} 
+.login button{
+  width: 122px;
+  height: 30px;
+  color: white;
+  border: 1px solid white;
+  background-color: #ffffff00;
+  cursor: pointer;
+}
+.seconde{
+  
+  display: flex;
+  justify-content: space-evenly;
+  background-color:  #F2F2F2;
+}
+.seconde div{
+
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.log h1{
+    font-family: 'Pacifico';
+
+}
+
+.categories p{
+  line-height: 28px;
+  font-family: 'League Spartan';
+}
+.information a{
+  display: block;
+  text-decoration: none;
+  color: black;
+  line-height: 28px;
+  font-family: 'League Spartan';
+}
+
+.contact{
+  margin-top: 50px;
+}
+#Contact .cont1{
+  display: flex;
+  margin-top: 12px;
+}
+#Contact p{
+  font-family: 'League Spartan';
+}
+#Contact i{
+  margin-right: 10px;
+}
+#mail{
+  
+  text-decoration: none;
+  color: black;
+} 
+.text{
+  font-family: 'League Spartan';
+  font-weight: bold;
+  font-size: 30px;
+ 
+}
+
+
+
+
+/* ********************** MEDIA QUERIES ********** */
+ 
+@media(max-width:992px){
+  .navbar .links, .navbar .action-btn{
+    display: none;
+  }
+  .navbar .toggle-btn{
+    display: block;
+  }
+  .dropdown-menu{
+    display: block;
+  }
+
+  .login input,  .login button{
+    width: auto;
+  }
+  .seconde{
+    flex-direction: column;
+  }
+} 
+
+@media(max-width:576px){
+  .dropdown-menu{
+    left: 2rem;
+    width: unset;
+  }
+  
+
+}
