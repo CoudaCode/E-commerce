@@ -4,7 +4,7 @@ var btn = document.querySelector('.btn');
 function login(e) {
  
   
-  let userList = JSON.parse(localStorage.getItem('userList')) || [];
+  let userList = JSON.parse(localStorage.getItem('userList') ?? [])
  
   var email = document.getElementById('email').value;
   var mdp = document.getElementById('password').value;
@@ -26,11 +26,12 @@ function login(e) {
   
 }
 
-document.querySelector('#form', (e)=>{
+document.querySelector('#form').addEventListener('submit', (e)=>{
   e.preventDefault()
-  function login(e)
+  login()
 })
+
 btn.addEventListener('click', (e)=>{
   e.preventDefault()
-  
+  login()
 })

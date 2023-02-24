@@ -4,10 +4,13 @@ let mtn = document.querySelector('.montnt')
 let quantite = document.querySelector('.mtn')
 let Plus = document.querySelector('.plus')
 let Moins = document.querySelector('.Moins')
+let Image = document.querySelector('.photo img')
 let SumProduct = parseInt(mtn.innerHTML)
 let qte = 1;
 let AjouT =document.querySelector('.ajout')
 
+
+console.log(Image)
 Plus.addEventListener('click',(e)=>{
    
         qte += 1
@@ -21,6 +24,7 @@ console.log(totaux)
 }
 
 )
+
 Moins.addEventListener('click',(e)=>{
     let totaux;
     
@@ -45,38 +49,40 @@ function saveBasket(basket) {
     localStorage.setItem("basket", JSON.stringify(basket))
 }    
 
+
 function getBasket(){
 
 
-    let basket = localStorage.getItem("basket")
+    let basket = localStorage.getItem("panier")
     if (basket == null) {
          return []
     }else{
-        return JSON.parse(basket)
+        console.log(JSON.parse(basket)) 
     }
     
 }
 
 // Ajouter UN produit et gestion de qte 
-function addBasket(product) {
-    let basket = getBasket();
-    // Verifie Si le produit est deja dans le panier (Si oui alors il augmente la qte sinon, il ajoute le nouveau produits)
-    let foundProduct = basket.find(p => p.Nom == product.Nom)
+// function addBasket(product) {
+//     let basket = getBasket();
+//     // Verifie Si le produit est deja dans le panier (Si oui alors il augmente la qte sinon, il ajoute le nouveau produits)
+//     let foundProduct = basket.find(p => p.Nom == product.Nom)
 
-    if(foundProduct != undefined){
-        foundProduct.quantity += qte;
-    }else{
-        product.quantity = qte;
-        basket.push(product)
-    }
+//     if(foundProduct != undefined){
+//         foundProduct.quantity += qte;
+//     }else{
+//         product.quantity = qte;
+//         basket.push(product)
+//     }
    
-    saveBasket(basket)
-} 
+//     saveBasket(basket)
+// } 
 
 
 
-AjouT.addEventListener('click', ()=>{
-    addBasket(product)
+AjouT.addEventListener('click', (e)=>{
+    e.preventDefault();
+    getBasket()
     AjouT.style.display = 'none'
 })
 
